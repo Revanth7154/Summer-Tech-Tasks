@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+<link rel="stylesheet"  href="css/mystyles.css">
+<link rel="stylesheet"  href="css/bootstrap-theme.min.css">
+</head>
+<body class="home">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>    
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li class="navbar-left"><a href="index.html">World Wide News</a></li>
+      <li><a href="#">Tech News</a></li>
+      <li><a href="#">Political News</a></li>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">World News</a></li>
+      <li><a href="#">Indian News</a></li>
+      <li class="navbar-right"><a href="Admin_login.html">Admin Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="box-p">
+
+  <h2>Update Article</h2>
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label class="control-label col-md-2" for="Name">Article Name(Compulsory)</label>
+      <div class="col-md-10">
+        <input type="text" class="form-control" id="Name" placeholder="Enter Article Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="Name">Edit Author Name</label>
+      <div class="col-md-10">
+        <input type="text" class="form-control" id="Name" placeholder="Enter Author Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="Name">Article</label>
+      <div class="col-md-10">
+      <textarea class="form-control" rows="10" id="comment" placeholder="Enter your Article"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="Date">Edit Date</label>
+      <div class="col-md-10">          
+        <input type="text" class="form-control" id="Date" placeholder="dd/mm/yyyy">
+      </div>
+    </div>          <h4>Select files from your computer</h4>
+          <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type="file" name="files[]" id="js-upload-files" multiple>
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+            </div>
+          </form>
+          <h4>Or drag and drop files below</h4>
+          <div class="upload-drop-zone" id="drop-zone">
+            Just drag and drop files here
+          </div>
+          <div class="js-upload-finished">
+            <h3>Processed files</h3>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>3.jpg</a>
+              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>6.jpg</a>
+            </div>
+          </div>
+      <div class="form-group">        
+      <div class="col-md-offset-2 col-md-10">
+        <a href="Admin_login.html"><button type="submit" class="btn btn-default btn-lg pull-right">Cancel</button></a>
+        <button type="submit" class="btn btn-default btn-lg pull-center">Get Details</button>
+        </a><button type="submit" class="btn btn-default  btn-lg pull-Left">Submit</button>
+      </div>
+    </div>
+    </div>
+  </form>
+
+</body>
+</html>
